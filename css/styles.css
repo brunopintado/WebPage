@@ -1,3 +1,80 @@
-body {
-  font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+  max-width: 1177px;
+  margin: 0 auto;
+}
+
+.bg-theme{
+  background-color: rgb(31, 33, 49);
+}
+
+.color-primary{
+  color: rgb(31, 33, 49);
+}
+
+nav{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(31, 33, 49, .5);
+}
+
+nav .logo img{
+  max-height: 30px;
+}
+
+nav .container{
+  max-width: 1000px;
+  display: flex;
+  height: 100%;
+}
+
+nav .container > div{
+  height: 100%;
+}
+
+nav .container div:first-of-type{
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+nav .container div:last-of-type {
+  width: 80%;
+}
+
+nav .nav-menu{
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+nav .nav-menu li{
+  padding-left: 40px;
+}
+
+nav .nav-menu li a{
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+header#site-header{
+  height: 100vh;
+  background-image: url('../img/bg-hero.jpeg');
+
+  background-size: contain;
+  background-position: right;
 }
